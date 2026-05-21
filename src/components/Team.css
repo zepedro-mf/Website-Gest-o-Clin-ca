@@ -1,0 +1,89 @@
+.team {
+  background-color: var(--bg-light);
+}
+
+.team-icon-header {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.team-subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.team-logos-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.logo-placeholder {
+  background-color: var(--white);
+  border: 2px dashed rgba(23, 62, 107, 0.2);
+  padding: 2rem 3rem;
+  border-radius: var(--border-radius);
+  color: var(--text-muted);
+  font-weight: 500;
+  min-width: 250px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.logo-placeholder:hover {
+  border-color: var(--primary);
+  background-color: rgba(23, 62, 107, 0.05);
+}
+
+.who-logo {
+  border-color: rgba(0, 142, 218, 0.3); /* WHO Blue */
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.avatar-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: var(--card-blue);
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+.member-name {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.member-number {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-family: monospace;
+  background-color: var(--bg-light);
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+}
