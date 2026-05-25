@@ -16,12 +16,6 @@ const Fundraiser = () => {
       btnText: "Apoiar Gaza"
     },
     {
-      name: "AMI - Emergência Palestina",
-      desc: "Missão da Fundação AMI de resposta à emergência humanitária, apoiando cuidados de saúde primários, distribuição de bens alimentares e medicamentos essenciais à população afetada.",
-      link: "https://ami.org.pt/missao/emergencia-palestina/",
-      btnText: "Apoiar AMI"
-    },
-    {
       name: "Campanha IDEALS",
       desc: "Iniciativa no JustGiving que financia equipas médicas de cirurgia e materiais cirúrgicos cruciais para tratar doentes e feridos em hospitais sob condições extremas.",
       link: "https://www.justgiving.com/campaign/ideals",
