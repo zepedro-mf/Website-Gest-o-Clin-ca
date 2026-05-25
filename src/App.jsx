@@ -3,6 +3,7 @@ import Context from './components/Context';
 import ConflictMap from './components/ConflictMap';
 import Objectives from './components/Objectives';
 import ActionLines from './components/ActionLines';
+import Fundraiser from './components/Fundraiser';
 import Team from './components/Team';
 import Footer from './components/Footer'; 
 import SimpleBar from 'simplebar-react';
@@ -17,6 +18,7 @@ function App() {
         <ConflictMap />
         <Objectives />
         <ActionLines />
+        <Fundraiser />
         <Team />
         <Footer />
       </SimpleBar>
