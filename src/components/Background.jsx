@@ -1,4 +1,3 @@
-import React from 'react';
 import { ShieldAlert } from 'lucide-react';
 import './Background.css';
 
@@ -15,6 +14,9 @@ const Background = () => {
           Segurança do Paciente<br/>
           <span className="text-accent">em Situações de Conflito</span>
         </h1>
+        <div className="background-slogan animate-fade-up delay-100">
+          <span>Cuidar.</span> <span>Proteger.</span> <span>Salvar Vidas.</span>
+        </div>
         <p className="background-subtitle">
           Mesmo em situações de conflito, a segurança do paciente não pode ser deixada para trás.
           Guerras e crises humanitárias colocam doentes, profissionais de saúde e sistemas de saúde em risco.

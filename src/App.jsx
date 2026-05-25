@@ -1,4 +1,3 @@
-import React from 'react';
 import Background from './components/Background';
 import Context from './components/Context';
 import ConflictMap from './components/ConflictMap';

@@ -1,37 +1,46 @@
-import React from 'react';
-import { Eye, ShieldCheck, HeartPulse, Shield, Globe } from 'lucide-react';
+import { useState } from 'react';
+import { ShieldCheck, Users, Package, HeartHandshake, Megaphone } from 'lucide-react';
 import './Objectives.css';
 
 const Objectives = () => {
+  const [flippedCards, setFlippedCards] = useState({});
+
+  const handleCardClick = (index) => {
+    setFlippedCards(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+
   const objectivesData = [
     {
-      icon: <Eye size={32} />,
-      title: "Sensibilizar",
-      desc: "Sensibilizar a comunidade para os impactos dos conflitos armados na segurança do doente.",
+      icon: <ShieldCheck size={36} />,
+      title: "Proteger",
+      desc: "Proteger doentes, profissionais e instalações de saúde",
       color: "var(--card-orange)"
     },
     {
-      icon: <ShieldCheck size={32} />,
-      title: "Promover Respeito",
-      desc: "Promover o respeito pelo Direito Internacional Humanitário e pela proteção das estruturas de saúde.",
+      icon: <Users size={36} />,
+      title: "Garantir Acesso",
+      desc: "Garantir acesso a cuidados seguros e de qualidade",
       color: "var(--card-purple)"
     },
     {
-      icon: <HeartPulse size={32} />,
-      title: "Alertar",
-      desc: "Alertar para a importância do acesso universal a cuidados de saúde seguros e de qualidade.",
+      icon: <Package size={36} />,
+      title: "Fornecer Recursos",
+      desc: "Fornecer recursos essenciais de forma eficiente",
       color: "var(--card-green)"
     },
     {
-      icon: <Shield size={32} />,
-      title: "Incentivar Proteção",
-      desc: "Incentivar medidas de proteção para profissionais de saúde e pacientes em zonas de conflito.",
+      icon: <HeartHandshake size={36} />,
+      title: "Apoiar & Capacitar",
+      desc: "Apoiar e capacitar profissionais de saúde no terreno",
       color: "var(--card-yellow)"
     },
     {
-      icon: <Globe size={32} />,
-      title: "Divulgar Ação",
-      desc: "Divulgar o papel das organizações internacionais na resposta humanitária e defesa da saúde global.",
+      icon: <Megaphone size={36} />,
+      title: "Ouvir & Aprender",
+      desc: "Ouvir e aprender para melhorar continuamente",
       color: "var(--card-blue)"
     }
   ];
@@ -40,9 +49,9 @@ const Objectives = () => {
     <section id="objectives" className="objectives section-padding">
       <div className="container">
         <div className="text-center mb-5 animate-fade-up">
-          <h2 className="section-title">Nossos Objetivos</h2>
+          <h2 className="section-title">O Que Podemos Fazer?</h2>
           <p className="objectives-subtitle">
-            A campanha foca-se em 5 pilares fundamentais para garantir a segurança de todos.
+            Conheça os cinco pilares de ação essenciais definidos na nossa campanha. Clique nos cartões para saber mais.
           </p>
         </div>
         
@@ -50,14 +59,23 @@ const Objectives = () => {
           {objectivesData.map((obj, index) => (
             <div 
               key={index} 
-              className={`obj-card animate-fade-up delay-${(index % 3 + 1) * 100}`}
-              style={{'--card-accent': obj.color}}
+              className={`obj-card animate-fade-up delay-${(index % 3 + 1) * 100} ${flippedCards[index] ? 'flipped' : ''}`}
+              style={{ '--card-accent': obj.color }}
+              onClick={() => handleCardClick(index)}
             >
-              <div className="obj-icon-wrapper" style={{ backgroundColor: obj.color }}>
-                {obj.icon}
+              <div className="obj-card-inner">
+                <div className="obj-card-front">
+                  <div className="obj-icon-wrapper" style={{ backgroundColor: obj.color, color: 'var(--primary)' }}>
+                    {obj.icon}
+                  </div>
+                  <h3 className="obj-title">{obj.title}</h3>
+                  <span className="click-hint">Clique para ver</span>
+                </div>
+                <div className="obj-card-back" style={{ backgroundColor: obj.color }}>
+                  <h4 className="obj-back-subtitle">Ação</h4>
+                  <p className="obj-desc">{obj.desc}</p>
+                </div>
               </div>
-              <h3 className="obj-title">{obj.title}</h3>
-              <p className="obj-desc">{obj.desc}</p>
             </div>
           ))}
         </div>

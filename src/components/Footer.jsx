@@ -1,4 +1,3 @@
-import React from 'react';
 import { ShieldPlus } from 'lucide-react';
 import './Footer.css';
 

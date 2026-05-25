@@ -99,3 +99,28 @@
 .container-wide {
   max-width: 1600px !important;
 }
+
+.team-logo-card {
+  background-color: var(--white);
+  border: 2px solid rgba(23, 62, 107, 0.15);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  width: 340px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.team-logo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.team-logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
   ComposableMap,
   Geographies,
@@ -101,9 +101,9 @@ const ConflictMap = () => {
     <section id="conflict-map" className="conflict-map section-padding">
       <div className="container">
         <div className="text-center mb-5 animate-fade-up">
-          <h2 className="section-title">Zonas Críticas em Foco</h2>
+          <h2 className="section-title">World Conflict Tracker</h2>
           <p className="map-subtitle">
-            Clique nos marcadores no mapa para compreender os desafios e as necessidades da resposta médica nas principais zonas de conflito atuais.
+            Este mapa representa conflitos ativos em diferentes regiões do mundo, onde milhões de pessoas enfrentam desafios no acesso a cuidados de saúde seguros.
           </p>
         </div>
 
@@ -213,6 +213,12 @@ const ConflictMap = () => {
               <p className="conflict-desc">{activeConflict.description}</p>
             </div>
           )}
+        </div>
+
+        <div className="map-outro animate-fade-up delay-300">
+          <p>
+            Nos últimos anos, temos assistido ao surgimento de novas guerras e à intensificação de conflitos já existentes, acompanhados por um crescente desrespeito pelos direitos humanos e pelas normas internacionais. Promover a segurança do doente significa proteger vidas, garantir assistência e reforçar a esperança.
+          </p>
         </div>
       </div>
     </section>

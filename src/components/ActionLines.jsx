@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight, MessageCircle } from 'lucide-react';
 import './ActionLines.css';
 
@@ -53,6 +52,11 @@ const ActionLines = () => {
             </div>
           </div>
 
+        </div>
+
+        <div className="action-banner animate-fade-up delay-300">
+          <h3 className="banner-title">Juntos, podemos fazer a diferença.</h3>
+          <p className="banner-text">A segurança do paciente é um <strong>direito humano</strong>.</p>
         </div>
       </div>
     </section>
