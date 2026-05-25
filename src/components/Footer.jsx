@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2026 Campanha Segurança do Paciente em Situações de Conflito. Todos os direitos reservados.</p>
+          <p>&copy; 2026 Campanha Segurança do Paciente em Situações de Conflito. Todos os direitos reservados4444.</p>
         </div>
       </div>
     </footer>
