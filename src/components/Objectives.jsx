@@ -69,7 +69,6 @@ const Objectives = () => {
                     {obj.icon}
                   </div>
                   <h3 className="obj-title">{obj.title}</h3>
-                  <span className="click-hint">Clique para ver</span>
                 </div>
                 <div className="obj-card-back" style={{ backgroundColor: obj.color }}>
                   <h4 className="obj-back-subtitle">Ação</h4>
