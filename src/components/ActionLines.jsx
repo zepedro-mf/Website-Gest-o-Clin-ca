@@ -13,7 +13,7 @@ const ActionLines = () => {
   const keyMessages = [
     "A saúde deve ser protegida, mesmo em tempos de guerra.",
     "Hospitais não são alvos.",
-    "Todos os doentes têm direito a cuidados seguros.",
+    "Todos os doentes têm direito fa cuidados seguros.",
     "Proteger profissionais de saúde é salvar vidas.",
     "A segurança do paciente é um direito universal."
   ];
@@ -24,8 +24,7 @@ const ActionLines = () => {
         <div className="action-grid">
           
           <div className="action-box animate-fade-up">
-            <h2 className="section-title">O Que Precisamos Fazer</h2>
-            <p className="action-desc">Nossas principais linhas de ação para combater esta crise:</p>
+            <h2 className="section-title">Linhas de Ação</h2>
             <ul className="action-list">
               {actionLines.map((line, index) => (
                 <li key={index} className="action-item">
