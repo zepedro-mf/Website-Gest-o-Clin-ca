@@ -12,9 +12,9 @@ const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
 // Níveis de gravidade e as suas cores
 const severityLevels = {
-  critical: { color: "#991b1b", label: "Crítico", icon: <AlertTriangle size={16} /> },
-  severe: { color: "#dc2626", label: "Severo", icon: <AlertCircle size={16} /> },
-  high: { color: "#ea580c", label: "Elevado", icon: <Activity size={16} /> }
+  critical: { color: "#991b1b", label: "Crítica", icon: <AlertTriangle size={16} /> },
+  severe: { color: "#dc2626", label: "Severa", icon: <AlertCircle size={16} /> },
+  high: { color: "#ea580c", label: "Elevada", icon: <Activity size={16} /> }
 };
 
 const conflicts = [
@@ -173,15 +173,15 @@ const ConflictMap = () => {
             <div className="legend-items">
               <div className="legend-item">
                 <span className="legend-color" style={{backgroundColor: severityLevels.critical.color}}></span>
-                <span>Crítico</span>
+                <span>Crítica</span>
               </div>
               <div className="legend-item">
                 <span className="legend-color" style={{backgroundColor: severityLevels.severe.color}}></span>
-                <span>Severo</span>
+                <span>Severa</span>
               </div>
               <div className="legend-item">
                 <span className="legend-color" style={{backgroundColor: severityLevels.high.color}}></span>
-                <span>Elevado</span>
+                <span>Elevada</span>
               </div>
             </div>
           </div>

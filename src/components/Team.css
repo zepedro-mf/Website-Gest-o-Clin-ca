@@ -18,9 +18,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
-  margin-bottom: 4rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
+}
+
+.team-logos-section img {
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .logo-placeholder {
@@ -45,13 +51,15 @@
 }
 
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
 .team-card {
   background-color: var(--white);
+  width: 220px;
   padding: 2rem;
   border-radius: var(--border-radius);
   text-align: center;
@@ -65,8 +73,8 @@
 }
 
 .avatar-placeholder {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   background-color: var(--card-blue);
   border-radius: 50%;
   margin: 0 auto 1.5rem;
@@ -86,4 +94,8 @@
   display: inline-block;
   padding: 0.2rem 0.8rem;
   border-radius: 20px;
+}
+
+.container-wide {
+  max-width: 1600px !important;
 }

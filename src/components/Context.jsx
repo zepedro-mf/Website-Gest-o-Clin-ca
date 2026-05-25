@@ -1,5 +1,5 @@
-import React from 'react';
 import './Context.css';
+import Counter from "./Counter.tsx";
 
 const Context = () => {
   return (
@@ -29,11 +29,15 @@ const Context = () => {
           
           <div className="context-stats animate-fade-up delay-200">
             <div className="stat-card">
-              <div className="stat-number">25%</div>
+              <div className="stat-number" style={{display: "flex", flexDirection: "row", gap: "0"}}>
+                <Counter end={25} duration={1.4}/>%
+              </div>
               <div className="stat-desc">Da população mundial vive em contextos frágeis ou afetados por conflitos.</div>
             </div>
             <div className="stat-card stat-accent">
-              <div className="stat-number">+2800</div>
+              <div className="stat-number" style={{display: "flex", flexDirection: "row", gap: "0"}}>
+                +<Counter end={2800} duration={1.4}/>
+              </div>
               <div className="stat-desc">Ataques contra serviços de saúde registados apenas na Ucrânia desde 2022.</div>
             </div>
             <div className="stat-card">

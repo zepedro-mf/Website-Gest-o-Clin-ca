@@ -34,6 +34,9 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  overflow-y: overlay;
 }
 
 * {
@@ -49,6 +52,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  overflow-y: overlay;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -132,7 +136,7 @@ img {
 }
 
 .btn-outline {
-  background-color: transparent;
+  background-color: var(--white);
   border: 2px solid var(--primary);
   color: var(--primary);
 }
@@ -140,4 +144,74 @@ img {
 .btn-outline:hover {
   background-color: var(--primary);
   color: var(--white);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* track (background) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 42, 42, 0.95); /* light red */
+  border-radius: 999px;
+  border: 2px solid transparent; /* gives "floating" effect */
+  background-clip: content-box;
+}
+
+/* hover effect (optional) */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 80, 80, 0.55);
+}
+
+/* corner (for both scrollbars) */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.simplebar-scrollbar {
+  cursor: pointer;
+}
+
+.simplebar-scrollbar::before {
+  background: rgba(238, 19, 19, 0.95) !important;
+  border-radius: 999px;
+  opacity: 1 !important;
+  transition: none !important;
+  cursor: pointer;
+}
+
+/* track (background area) */
+.simplebar-track.simplebar-vertical {
+  width: 10px;
+  background: transparent;
+}
+
+/* hover effect */
+.simplebar-scrollbar:hover::before {
+  background: rgba(238, 19, 19, 1);
+  cursor: pointer !important;
+}
+
+/* Reset cursor for the scrollable content */
+.simplebar-content-wrapper {
+  cursor: auto !important;
+}
+
+/* Only the track and thumb get pointer */
+.simplebar-track.simplebar-vertical {
+  cursor: pointer !important;
+}
+
+.simplebar-scrollbar::before {
+  cursor: pointer !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
 }
