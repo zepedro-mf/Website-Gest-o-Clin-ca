@@ -14,11 +14,24 @@ const Fundraiser = () => {
       desc: "Plataforma agregadora com ligações para iniciativas de ajuda humanitária e fundos de assistência médica de emergência dedicados a civis e serviços de saúde em Gaza.",
       link: "https://linktr.ee/fundsforgaza?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
       btnText: "Apoiar Gaza"
+    },
+    {
+      name: "AMI - Emergência Palestina",
+      desc: "Missão da Fundação AMI de resposta à emergência humanitária, apoiando cuidados de saúde primários, distribuição de bens alimentares e medicamentos essenciais à população afetada.",
+      link: "https://ami.org.pt/missao/emergencia-palestina/",
+      btnText: "Apoiar AMI"
+    },
+    {
+      name: "Campanha IDEALS",
+      desc: "Iniciativa no JustGiving que financia equipas médicas de cirurgia e materiais cirúrgicos cruciais para tratar doentes e feridos em hospitais sob condições extremas.",
+      link: "https://www.justgiving.com/campaign/ideals",
+      btnText: "Apoiar IDEALS"
     }
   ];
 
   return (
-    <section id="fundraiser" className="fundraiser section-padding">
+    <section className="fundraiser section-padding">
+      <div id="fundraiser" style={{ position: 'relative', top: '-150px', visibility: 'hidden' }}></div>
       <div className="container">
         <div className="fundraiser-card animate-fade-up">
           <div className="fundraiser-content">

@@ -23,7 +23,7 @@ const Background = () => {
         </p>
         <div className="background-actions">
           <a href="#context" className="btn btn-primary">Saber Mais</a>
-          <a href="#action-lines" className="btn btn-outline background-btn-outline">Como Ajudar</a>
+          <a href="#fundraiser" className="btn btn-outline background-btn-outline">Como Ajudar</a>
         </div>
       </div>
     </section>
