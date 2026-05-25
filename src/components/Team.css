@@ -29,26 +29,7 @@
   object-fit: contain;
 }
 
-.logo-placeholder {
-  background-color: var(--white);
-  border: 2px dashed rgba(23, 62, 107, 0.2);
-  padding: 2rem 3rem;
-  border-radius: var(--border-radius);
-  color: var(--text-muted);
-  font-weight: 500;
-  min-width: 250px;
-  text-align: center;
-  transition: var(--transition);
-}
 
-.logo-placeholder:hover {
-  border-color: var(--primary);
-  background-color: rgba(23, 62, 107, 0.05);
-}
-
-.who-logo {
-  border-color: rgba(0, 142, 218, 0.3); /* WHO Blue */
-}
 
 .team-grid {
   display: flex;
@@ -120,6 +101,33 @@
 }
 
 .team-logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.team-logo-card-large {
+  background-color: var(--white);
+  border: 2px solid rgba(23, 62, 107, 0.15);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  width: 380px;
+  height: 210px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  margin: 0 auto;
+}
+
+.team-logo-card-large:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.team-logo-card-large img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;

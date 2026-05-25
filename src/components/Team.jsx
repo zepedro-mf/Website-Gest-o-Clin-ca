@@ -1,8 +1,6 @@
 import { Users } from 'lucide-react';
 import './Team.css';
-import who from '../assets/who.png';
-import logo_gc from '../assets/logo_GC.jpeg';
-import wpsd from '../assets/World-Patient-safety-day.png';
+import logoGc from '../assets/logo_GC.jpeg';
 import afonsoImg from '../assets/Afonso.png';
 import biancaImg from '../assets/Bianca.png';
 import joseImg from '../assets/Jose.png';
@@ -33,14 +31,8 @@ const Team = () => {
         </div>
 
         <div className="team-logos-section animate-fade-up delay-100">
-          <div className="team-logo-card" style={{ borderColor: "rgba(23, 62, 107, 0.2)" }}>
-            <img src={logo_gc} alt="Grupo" />
-          </div>
-          <div className="team-logo-card" style={{ borderColor: "rgba(0, 142, 218, 0.3)" }}>
-            <img src={who} alt="OMS" />
-          </div>
-          <div className="team-logo-card" style={{ borderColor: "rgba(234, 88, 12, 0.2)" }}>
-            <img src={wpsd} alt="World Patient Safety Day" />
+          <div className="team-logo-card-large" style={{ borderColor: "rgba(23, 62, 107, 0.2)" }}>
+            <img src={logoGc} alt="Grupo" />
           </div>
         </div>
 

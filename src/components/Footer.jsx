@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2026 Campanha Segurança do Paciente em Situações de Conflito. Todos os direitos reservados.</p>
+          <p>O presente meio de divulgação foi desenvolvido no âmbito da Unidade Curricular de Gestão Clínica e da Qualidade em Saúde da Licenciatura em Engenharia Biomédica, não existindo qualquer intenção ou interesse comercial.</p>
         </div>
       </div>
     </footer>
