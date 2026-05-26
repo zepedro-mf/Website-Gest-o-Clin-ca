@@ -4,7 +4,7 @@ import Counter from "./Counter.tsx";
 
 const Context = () => {
   return (
-    <section id="context" className="context section-padding">
+    <section id="context" className="context section-padding" style={{marginTop: "30px"}}>
       <div className="container">
         <div className="context-grid">
           <div className="context-content animate-fade-up">
